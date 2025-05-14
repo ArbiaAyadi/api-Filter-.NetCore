@@ -1,0 +1,51 @@
+﻿@* @model IEnumerable<Maison>
+@{
+    ViewData["Title"] = "Maisons Disponibles";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<!-- Formulaire de Filtrage -->
+<form method="get" class="mb-4">
+    <div class="row">
+        <div class="col">
+            <input type="number" name="prixMax" class="form-control" placeholder="Prix max (€)"
+                   value="@Context.Request.Query["prixMax"]" min="0">
+        </div>
+        <div class="col">
+            <input type="number" name="surfaceMin" class="form-control" placeholder="Surface min (m²)"
+                   value="@Context.Request.Query["surfaceMin"]" min="0">
+        </div>
+        <div class="col">
+            <button type="submit" class="btn btn-primary">Filtrer</button>
+        </div>
+    </div>
+</form>
+
+<!-- Résultats -->
+@if (ViewBag.FilterMessage != null)
+{
+    <div class="alert alert-info">@ViewBag.FilterMessage</div>
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Adresse</th>
+            <th>Prix (€)</th>
+            <th>Surface (m²)</th>
+            <th>Client</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var maison in Model)
+        {
+            <tr>
+                <td>@maison.Adresse</td>
+                <td>@maison.Prix.ToString("N0")</td>
+                <td>@maison.Surface</td>
+                <td>@maison.Client?.Nom</td>
+            </tr>
+        }
+    </tbody>
+</table> *@

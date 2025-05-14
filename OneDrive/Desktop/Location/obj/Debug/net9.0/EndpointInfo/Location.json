@@ -1,0 +1,2341 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "Location",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Maison/filtrer": {
+      "get": {
+        "tags": [
+          "Maison"
+        ],
+        "parameters": [
+          {
+            "name": "MaisonId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "adresse",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "zone",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "prix",
+            "in": "query",
+            "schema": {
+              "type": "number",
+              "format": "float"
+            }
+          },
+          {
+            "name": "Genre",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "disponibilite",
+            "in": "query",
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "OwnerId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.OwnerId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.UserId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.UserId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.nom",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.prenom",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.email",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.role",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.motDePasse",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.UserId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.UserId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.nom",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.prenom",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.email",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.role",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.motDePasse",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Admin",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/Admin"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Visiteur.VisitorId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Visiteur.UserId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Visiteur.User.UserId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Visiteur.User.nom",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Visiteur.User.prenom",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Visiteur.User.email",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Visiteur.User.role",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Visiteur.User.motDePasse",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Visiteur.User.Admin",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/Admin"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Visiteur.User.Visiteur",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/Visitor"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Visiteur.User.Owner.OwnerId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Visiteur.User.Owner.UserId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Visiteur.User.Owner.User",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/User"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Visiteur.User.Owner.Maisons",
+            "in": "query",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/Maison"
+              }
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Visiteur.User.Client.ClientId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Visiteur.User.Client.budget",
+            "in": "query",
+            "schema": {
+              "type": "number",
+              "format": "float"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Visiteur.User.Client.UserId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Visiteur.User.Client.User.UserId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Visiteur.User.Client.User.nom",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Visiteur.User.Client.User.prenom",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Visiteur.User.Client.User.email",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Visiteur.User.Client.User.role",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Visiteur.User.Client.User.motDePasse",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Visiteur.User.Client.User.Admin",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/Admin"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Visiteur.User.Client.User.Visiteur",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/Visitor"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Visiteur.User.Client.User.Owner.OwnerId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Visiteur.User.Client.User.Owner.UserId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Visiteur.User.Client.User.Owner.User",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/User"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Visiteur.User.Client.User.Owner.Maisons",
+            "in": "query",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/Maison"
+              }
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Visiteur.User.Client.User.Client",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/Client"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Visiteur.User.Client.Maisons",
+            "in": "query",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/Maison"
+              }
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Visiteur.User.Client.Reviews",
+            "in": "query",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/Review"
+              }
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Visiteur.User.Client.Payments",
+            "in": "query",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/Payment"
+              }
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Visiteur.User.Client.Payment",
+            "in": "query",
+            "schema": { }
+          },
+          {
+            "name": "Owner.User.Admin.User.Owner.OwnerId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Owner.UserId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Owner.User",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/User"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Owner.Maisons",
+            "in": "query",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/Maison"
+              }
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Client.ClientId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Client.budget",
+            "in": "query",
+            "schema": {
+              "type": "number",
+              "format": "float"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Client.UserId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Client.User.UserId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Client.User.nom",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Client.User.prenom",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Client.User.email",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Client.User.role",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Client.User.motDePasse",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Client.User.Admin",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/Admin"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Client.User.Visiteur.VisitorId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Client.User.Visiteur.UserId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Client.User.Visiteur.User.UserId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Client.User.Visiteur.User.nom",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Client.User.Visiteur.User.prenom",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Client.User.Visiteur.User.email",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Client.User.Visiteur.User.role",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Client.User.Visiteur.User.motDePasse",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Client.User.Visiteur.User.Admin",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/Admin"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Client.User.Visiteur.User.Visiteur",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/Visitor"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Client.User.Visiteur.User.Owner.OwnerId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Client.User.Visiteur.User.Owner.UserId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Client.User.Visiteur.User.Owner.User",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/User"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Client.User.Visiteur.User.Owner.Maisons",
+            "in": "query",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/Maison"
+              }
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Client.User.Visiteur.User.Client",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/Client"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Client.User.Owner.OwnerId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Client.User.Owner.UserId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Client.User.Owner.User",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/User"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Client.User.Owner.Maisons",
+            "in": "query",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/Maison"
+              }
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Client.User.Client",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/Client"
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Client.Maisons",
+            "in": "query",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/Maison"
+              }
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Client.Reviews",
+            "in": "query",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/Review"
+              }
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Client.Payments",
+            "in": "query",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/Payment"
+              }
+            }
+          },
+          {
+            "name": "Owner.User.Admin.User.Client.Payment",
+            "in": "query",
+            "schema": { }
+          },
+          {
+            "name": "Owner.User.Visiteur.VisitorId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.UserId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.UserId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.nom",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.prenom",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.email",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.role",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.motDePasse",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Admin.UserId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Admin.User.UserId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Admin.User.nom",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Admin.User.prenom",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Admin.User.email",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Admin.User.role",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Admin.User.motDePasse",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Admin.User.Admin",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/Admin"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Admin.User.Visiteur",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/Visitor"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Admin.User.Owner.OwnerId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Admin.User.Owner.UserId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Admin.User.Owner.User",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/User"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Admin.User.Owner.Maisons",
+            "in": "query",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/Maison"
+              }
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Admin.User.Client.ClientId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Admin.User.Client.budget",
+            "in": "query",
+            "schema": {
+              "type": "number",
+              "format": "float"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Admin.User.Client.UserId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Admin.User.Client.User.UserId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Admin.User.Client.User.nom",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Admin.User.Client.User.prenom",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Admin.User.Client.User.email",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Admin.User.Client.User.role",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Admin.User.Client.User.motDePasse",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Admin.User.Client.User.Admin",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/Admin"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Admin.User.Client.User.Visiteur",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/Visitor"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Admin.User.Client.User.Owner.OwnerId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Admin.User.Client.User.Owner.UserId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Admin.User.Client.User.Owner.User",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/User"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Admin.User.Client.User.Owner.Maisons",
+            "in": "query",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/Maison"
+              }
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Admin.User.Client.User.Client",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/Client"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Admin.User.Client.Maisons",
+            "in": "query",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/Maison"
+              }
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Admin.User.Client.Reviews",
+            "in": "query",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/Review"
+              }
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Admin.User.Client.Payments",
+            "in": "query",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/Payment"
+              }
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Admin.User.Client.Payment",
+            "in": "query",
+            "schema": { }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Visiteur",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/Visitor"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Owner.OwnerId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Owner.UserId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Owner.User",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/User"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Owner.Maisons",
+            "in": "query",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/Maison"
+              }
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Client.ClientId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Client.budget",
+            "in": "query",
+            "schema": {
+              "type": "number",
+              "format": "float"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Client.UserId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Client.User.UserId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Client.User.nom",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Client.User.prenom",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Client.User.email",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Client.User.role",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Client.User.motDePasse",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Client.User.Admin.UserId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Client.User.Admin.User.UserId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Client.User.Admin.User.nom",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Client.User.Admin.User.prenom",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Client.User.Admin.User.email",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Client.User.Admin.User.role",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Client.User.Admin.User.motDePasse",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Client.User.Admin.User.Admin",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/Admin"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Client.User.Admin.User.Visiteur",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/Visitor"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Client.User.Admin.User.Owner.OwnerId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Client.User.Admin.User.Owner.UserId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Client.User.Admin.User.Owner.User",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/User"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Client.User.Admin.User.Owner.Maisons",
+            "in": "query",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/Maison"
+              }
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Client.User.Admin.User.Client",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/Client"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Client.User.Visiteur",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/Visitor"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Client.User.Owner.OwnerId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Client.User.Owner.UserId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Client.User.Owner.User",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/User"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Client.User.Owner.Maisons",
+            "in": "query",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/Maison"
+              }
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Client.User.Client",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/Client"
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Client.Maisons",
+            "in": "query",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/Maison"
+              }
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Client.Reviews",
+            "in": "query",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/Review"
+              }
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Client.Payments",
+            "in": "query",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/Payment"
+              }
+            }
+          },
+          {
+            "name": "Owner.User.Visiteur.User.Client.Payment",
+            "in": "query",
+            "schema": { }
+          },
+          {
+            "name": "Owner.User.Owner.OwnerId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Owner.UserId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Owner.User",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/User"
+            }
+          },
+          {
+            "name": "Owner.User.Owner.Maisons",
+            "in": "query",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/Maison"
+              }
+            }
+          },
+          {
+            "name": "Owner.User.Client.ClientId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Client.budget",
+            "in": "query",
+            "schema": {
+              "type": "number",
+              "format": "float"
+            }
+          },
+          {
+            "name": "Owner.User.Client.UserId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.UserId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.nom",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.prenom",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.email",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.role",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.motDePasse",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.Admin.UserId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.Admin.User.UserId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.Admin.User.nom",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.Admin.User.prenom",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.Admin.User.email",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.Admin.User.role",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.Admin.User.motDePasse",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.Admin.User.Admin",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/Admin"
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.Admin.User.Visiteur.VisitorId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.Admin.User.Visiteur.UserId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.Admin.User.Visiteur.User.UserId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.Admin.User.Visiteur.User.nom",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.Admin.User.Visiteur.User.prenom",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.Admin.User.Visiteur.User.email",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.Admin.User.Visiteur.User.role",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.Admin.User.Visiteur.User.motDePasse",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.Admin.User.Visiteur.User.Admin",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/Admin"
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.Admin.User.Visiteur.User.Visiteur",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/Visitor"
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.Admin.User.Visiteur.User.Owner.OwnerId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.Admin.User.Visiteur.User.Owner.UserId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.Admin.User.Visiteur.User.Owner.User",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/User"
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.Admin.User.Visiteur.User.Owner.Maisons",
+            "in": "query",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/Maison"
+              }
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.Admin.User.Visiteur.User.Client",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/Client"
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.Admin.User.Owner.OwnerId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.Admin.User.Owner.UserId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.Admin.User.Owner.User",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/User"
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.Admin.User.Owner.Maisons",
+            "in": "query",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/Maison"
+              }
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.Admin.User.Client",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/Client"
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.Visiteur.VisitorId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.Visiteur.UserId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.Visiteur.User.UserId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.Visiteur.User.nom",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.Visiteur.User.prenom",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.Visiteur.User.email",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.Visiteur.User.role",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.Visiteur.User.motDePasse",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.Visiteur.User.Admin.UserId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.Visiteur.User.Admin.User.UserId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.Visiteur.User.Admin.User.nom",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.Visiteur.User.Admin.User.prenom",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.Visiteur.User.Admin.User.email",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.Visiteur.User.Admin.User.role",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.Visiteur.User.Admin.User.motDePasse",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.Visiteur.User.Admin.User.Admin",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/Admin"
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.Visiteur.User.Admin.User.Visiteur",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/Visitor"
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.Visiteur.User.Admin.User.Owner.OwnerId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.Visiteur.User.Admin.User.Owner.UserId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.Visiteur.User.Admin.User.Owner.User",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/User"
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.Visiteur.User.Admin.User.Owner.Maisons",
+            "in": "query",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/Maison"
+              }
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.Visiteur.User.Admin.User.Client",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/Client"
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.Visiteur.User.Visiteur",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/Visitor"
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.Visiteur.User.Owner.OwnerId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.Visiteur.User.Owner.UserId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.Visiteur.User.Owner.User",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/User"
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.Visiteur.User.Owner.Maisons",
+            "in": "query",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/Maison"
+              }
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.Visiteur.User.Client",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/Client"
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.Owner.OwnerId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.Owner.UserId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.Owner.User",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/User"
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.Owner.Maisons",
+            "in": "query",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/Maison"
+              }
+            }
+          },
+          {
+            "name": "Owner.User.Client.User.Client",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/Client"
+            }
+          },
+          {
+            "name": "Owner.User.Client.Maisons",
+            "in": "query",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/Maison"
+              }
+            }
+          },
+          {
+            "name": "Owner.User.Client.Reviews",
+            "in": "query",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/Review"
+              }
+            }
+          },
+          {
+            "name": "Owner.User.Client.Payments",
+            "in": "query",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/Payment"
+              }
+            }
+          },
+          {
+            "name": "Owner.User.Client.Payment",
+            "in": "query",
+            "schema": { }
+          },
+          {
+            "name": "Owner.Maisons",
+            "in": "query",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/Maison"
+              }
+            }
+          },
+          {
+            "name": "Reviews",
+            "in": "query",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/Review"
+              }
+            }
+          },
+          {
+            "name": "Payments",
+            "in": "query",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/Payment"
+              }
+            }
+          },
+          {
+            "name": "AdresseFilter",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "ZoneFilter",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "MinPrix",
+            "in": "query",
+            "schema": {
+              "type": "number",
+              "format": "float"
+            }
+          },
+          {
+            "name": "MaxPrix",
+            "in": "query",
+            "schema": {
+              "type": "number",
+              "format": "float"
+            }
+          },
+          {
+            "name": "GenreFilter",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "DisponibiliteFilter",
+            "in": "query",
+            "schema": {
+              "type": "boolean"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Admin": {
+        "type": "object",
+        "properties": {
+          "userId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "user": {
+            "$ref": "#/components/schemas/User"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Client": {
+        "type": "object",
+        "properties": {
+          "clientId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "budget": {
+            "type": "number",
+            "format": "float"
+          },
+          "userId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "user": {
+            "$ref": "#/components/schemas/User"
+          },
+          "maisons": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Maison"
+            },
+            "nullable": true
+          },
+          "reviews": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Review"
+            },
+            "nullable": true
+          },
+          "payments": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Payment"
+            },
+            "nullable": true
+          },
+          "payment": {
+            "nullable": true,
+            "readOnly": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Maison": {
+        "required": [
+          "adresse"
+        ],
+        "type": "object",
+        "properties": {
+          "maisonId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "adresse": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "zone": {
+            "type": "string",
+            "nullable": true
+          },
+          "prix": {
+            "type": "number",
+            "format": "float"
+          },
+          "genre": {
+            "type": "string",
+            "nullable": true
+          },
+          "disponibilite": {
+            "type": "boolean"
+          },
+          "ownerId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "owner": {
+            "$ref": "#/components/schemas/Owner"
+          },
+          "reviews": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Review"
+            },
+            "nullable": true
+          },
+          "payments": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Payment"
+            },
+            "nullable": true
+          },
+          "adresseFilter": {
+            "type": "string",
+            "nullable": true
+          },
+          "zoneFilter": {
+            "type": "string",
+            "nullable": true
+          },
+          "minPrix": {
+            "type": "number",
+            "format": "float",
+            "nullable": true
+          },
+          "maxPrix": {
+            "type": "number",
+            "format": "float",
+            "nullable": true
+          },
+          "genreFilter": {
+            "type": "string",
+            "nullable": true
+          },
+          "disponibiliteFilter": {
+            "type": "boolean",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Owner": {
+        "type": "object",
+        "properties": {
+          "ownerId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "userId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "user": {
+            "$ref": "#/components/schemas/User"
+          },
+          "maisons": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Maison"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Payment": {
+        "type": "object",
+        "properties": {
+          "paymentId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "montant": {
+            "type": "number",
+            "format": "float"
+          },
+          "date": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "clientId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "client": {
+            "$ref": "#/components/schemas/Client"
+          },
+          "maisonId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "maison": {
+            "$ref": "#/components/schemas/Maison"
+          },
+          "commissionAdmin": {
+            "type": "number",
+            "format": "float",
+            "readOnly": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Review": {
+        "type": "object",
+        "properties": {
+          "reviewId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "note": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "commentaire": {
+            "type": "string",
+            "nullable": true
+          },
+          "clientId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "client": {
+            "$ref": "#/components/schemas/Client"
+          },
+          "maisonId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "maison": {
+            "$ref": "#/components/schemas/Maison"
+          }
+        },
+        "additionalProperties": false
+      },
+      "User": {
+        "required": [
+          "nom"
+        ],
+        "type": "object",
+        "properties": {
+          "userId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nom": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "prenom": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "role": {
+            "type": "string",
+            "nullable": true
+          },
+          "motDePasse": {
+            "type": "string",
+            "nullable": true
+          },
+          "admin": {
+            "$ref": "#/components/schemas/Admin"
+          },
+          "visiteur": {
+            "$ref": "#/components/schemas/Visitor"
+          },
+          "owner": {
+            "$ref": "#/components/schemas/Owner"
+          },
+          "client": {
+            "$ref": "#/components/schemas/Client"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Visitor": {
+        "type": "object",
+        "properties": {
+          "visitorId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "userId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "user": {
+            "$ref": "#/components/schemas/User"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

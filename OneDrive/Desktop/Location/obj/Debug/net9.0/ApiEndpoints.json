@@ -1,0 +1,1318 @@
+[
+  {
+    "ContainingType": "Location.Controllers.MaisonController",
+    "Method": "FiltrerMaisons",
+    "RelativePath": "api/Maison/filtrer",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "MaisonId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "adresse",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "zone",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "prix",
+        "Type": "System.Single",
+        "IsRequired": false
+      },
+      {
+        "Name": "Genre",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "disponibilite",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "OwnerId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.OwnerId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.nom",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.prenom",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.role",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.motDePasse",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.nom",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.prenom",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.role",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.motDePasse",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Admin",
+        "Type": "Location.Models.Admin",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Visiteur.VisitorId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Visiteur.UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Visiteur.User.UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Visiteur.User.nom",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Visiteur.User.prenom",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Visiteur.User.email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Visiteur.User.role",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Visiteur.User.motDePasse",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Visiteur.User.Admin",
+        "Type": "Location.Models.Admin",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Visiteur.User.Visiteur",
+        "Type": "Location.Models.Visitor",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Visiteur.User.Owner.OwnerId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Visiteur.User.Owner.UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Visiteur.User.Owner.User",
+        "Type": "Location.Models.User",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Visiteur.User.Owner.Maisons",
+        "Type": "System.Collections.Generic.ICollection\u00601[[Location.Models.Maison, Location, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Visiteur.User.Client.ClientId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Visiteur.User.Client.budget",
+        "Type": "System.Single",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Visiteur.User.Client.UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Visiteur.User.Client.User.UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Visiteur.User.Client.User.nom",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Visiteur.User.Client.User.prenom",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Visiteur.User.Client.User.email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Visiteur.User.Client.User.role",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Visiteur.User.Client.User.motDePasse",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Visiteur.User.Client.User.Admin",
+        "Type": "Location.Models.Admin",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Visiteur.User.Client.User.Visiteur",
+        "Type": "Location.Models.Visitor",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Visiteur.User.Client.User.Owner.OwnerId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Visiteur.User.Client.User.Owner.UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Visiteur.User.Client.User.Owner.User",
+        "Type": "Location.Models.User",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Visiteur.User.Client.User.Owner.Maisons",
+        "Type": "System.Collections.Generic.ICollection\u00601[[Location.Models.Maison, Location, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Visiteur.User.Client.User.Client",
+        "Type": "Location.Models.Client",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Visiteur.User.Client.Maisons",
+        "Type": "System.Collections.Generic.ICollection\u00601[[Location.Models.Maison, Location, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Visiteur.User.Client.Reviews",
+        "Type": "System.Collections.Generic.ICollection\u00601[[Location.Models.Review, Location, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Visiteur.User.Client.Payments",
+        "Type": "System.Collections.Generic.ICollection\u00601[[Location.Models.Payment, Location, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Visiteur.User.Client.Payment",
+        "Type": "System.Object",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Owner.OwnerId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Owner.UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Owner.User",
+        "Type": "Location.Models.User",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Owner.Maisons",
+        "Type": "System.Collections.Generic.ICollection\u00601[[Location.Models.Maison, Location, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Client.ClientId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Client.budget",
+        "Type": "System.Single",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Client.UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Client.User.UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Client.User.nom",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Client.User.prenom",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Client.User.email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Client.User.role",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Client.User.motDePasse",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Client.User.Admin",
+        "Type": "Location.Models.Admin",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Client.User.Visiteur.VisitorId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Client.User.Visiteur.UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Client.User.Visiteur.User.UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Client.User.Visiteur.User.nom",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Client.User.Visiteur.User.prenom",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Client.User.Visiteur.User.email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Client.User.Visiteur.User.role",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Client.User.Visiteur.User.motDePasse",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Client.User.Visiteur.User.Admin",
+        "Type": "Location.Models.Admin",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Client.User.Visiteur.User.Visiteur",
+        "Type": "Location.Models.Visitor",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Client.User.Visiteur.User.Owner.OwnerId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Client.User.Visiteur.User.Owner.UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Client.User.Visiteur.User.Owner.User",
+        "Type": "Location.Models.User",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Client.User.Visiteur.User.Owner.Maisons",
+        "Type": "System.Collections.Generic.ICollection\u00601[[Location.Models.Maison, Location, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Client.User.Visiteur.User.Client",
+        "Type": "Location.Models.Client",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Client.User.Owner.OwnerId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Client.User.Owner.UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Client.User.Owner.User",
+        "Type": "Location.Models.User",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Client.User.Owner.Maisons",
+        "Type": "System.Collections.Generic.ICollection\u00601[[Location.Models.Maison, Location, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Client.User.Client",
+        "Type": "Location.Models.Client",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Client.Maisons",
+        "Type": "System.Collections.Generic.ICollection\u00601[[Location.Models.Maison, Location, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Client.Reviews",
+        "Type": "System.Collections.Generic.ICollection\u00601[[Location.Models.Review, Location, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Client.Payments",
+        "Type": "System.Collections.Generic.ICollection\u00601[[Location.Models.Payment, Location, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Admin.User.Client.Payment",
+        "Type": "System.Object",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.VisitorId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.nom",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.prenom",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.role",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.motDePasse",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Admin.UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Admin.User.UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Admin.User.nom",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Admin.User.prenom",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Admin.User.email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Admin.User.role",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Admin.User.motDePasse",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Admin.User.Admin",
+        "Type": "Location.Models.Admin",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Admin.User.Visiteur",
+        "Type": "Location.Models.Visitor",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Admin.User.Owner.OwnerId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Admin.User.Owner.UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Admin.User.Owner.User",
+        "Type": "Location.Models.User",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Admin.User.Owner.Maisons",
+        "Type": "System.Collections.Generic.ICollection\u00601[[Location.Models.Maison, Location, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Admin.User.Client.ClientId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Admin.User.Client.budget",
+        "Type": "System.Single",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Admin.User.Client.UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Admin.User.Client.User.UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Admin.User.Client.User.nom",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Admin.User.Client.User.prenom",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Admin.User.Client.User.email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Admin.User.Client.User.role",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Admin.User.Client.User.motDePasse",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Admin.User.Client.User.Admin",
+        "Type": "Location.Models.Admin",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Admin.User.Client.User.Visiteur",
+        "Type": "Location.Models.Visitor",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Admin.User.Client.User.Owner.OwnerId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Admin.User.Client.User.Owner.UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Admin.User.Client.User.Owner.User",
+        "Type": "Location.Models.User",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Admin.User.Client.User.Owner.Maisons",
+        "Type": "System.Collections.Generic.ICollection\u00601[[Location.Models.Maison, Location, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Admin.User.Client.User.Client",
+        "Type": "Location.Models.Client",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Admin.User.Client.Maisons",
+        "Type": "System.Collections.Generic.ICollection\u00601[[Location.Models.Maison, Location, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Admin.User.Client.Reviews",
+        "Type": "System.Collections.Generic.ICollection\u00601[[Location.Models.Review, Location, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Admin.User.Client.Payments",
+        "Type": "System.Collections.Generic.ICollection\u00601[[Location.Models.Payment, Location, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Admin.User.Client.Payment",
+        "Type": "System.Object",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Visiteur",
+        "Type": "Location.Models.Visitor",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Owner.OwnerId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Owner.UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Owner.User",
+        "Type": "Location.Models.User",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Owner.Maisons",
+        "Type": "System.Collections.Generic.ICollection\u00601[[Location.Models.Maison, Location, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Client.ClientId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Client.budget",
+        "Type": "System.Single",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Client.UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Client.User.UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Client.User.nom",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Client.User.prenom",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Client.User.email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Client.User.role",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Client.User.motDePasse",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Client.User.Admin.UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Client.User.Admin.User.UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Client.User.Admin.User.nom",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Client.User.Admin.User.prenom",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Client.User.Admin.User.email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Client.User.Admin.User.role",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Client.User.Admin.User.motDePasse",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Client.User.Admin.User.Admin",
+        "Type": "Location.Models.Admin",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Client.User.Admin.User.Visiteur",
+        "Type": "Location.Models.Visitor",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Client.User.Admin.User.Owner.OwnerId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Client.User.Admin.User.Owner.UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Client.User.Admin.User.Owner.User",
+        "Type": "Location.Models.User",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Client.User.Admin.User.Owner.Maisons",
+        "Type": "System.Collections.Generic.ICollection\u00601[[Location.Models.Maison, Location, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Client.User.Admin.User.Client",
+        "Type": "Location.Models.Client",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Client.User.Visiteur",
+        "Type": "Location.Models.Visitor",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Client.User.Owner.OwnerId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Client.User.Owner.UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Client.User.Owner.User",
+        "Type": "Location.Models.User",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Client.User.Owner.Maisons",
+        "Type": "System.Collections.Generic.ICollection\u00601[[Location.Models.Maison, Location, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Client.User.Client",
+        "Type": "Location.Models.Client",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Client.Maisons",
+        "Type": "System.Collections.Generic.ICollection\u00601[[Location.Models.Maison, Location, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Client.Reviews",
+        "Type": "System.Collections.Generic.ICollection\u00601[[Location.Models.Review, Location, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Client.Payments",
+        "Type": "System.Collections.Generic.ICollection\u00601[[Location.Models.Payment, Location, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Visiteur.User.Client.Payment",
+        "Type": "System.Object",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Owner.OwnerId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Owner.UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Owner.User",
+        "Type": "Location.Models.User",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Owner.Maisons",
+        "Type": "System.Collections.Generic.ICollection\u00601[[Location.Models.Maison, Location, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.ClientId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.budget",
+        "Type": "System.Single",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.nom",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.prenom",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.role",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.motDePasse",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.Admin.UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.Admin.User.UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.Admin.User.nom",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.Admin.User.prenom",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.Admin.User.email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.Admin.User.role",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.Admin.User.motDePasse",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.Admin.User.Admin",
+        "Type": "Location.Models.Admin",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.Admin.User.Visiteur.VisitorId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.Admin.User.Visiteur.UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.Admin.User.Visiteur.User.UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.Admin.User.Visiteur.User.nom",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.Admin.User.Visiteur.User.prenom",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.Admin.User.Visiteur.User.email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.Admin.User.Visiteur.User.role",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.Admin.User.Visiteur.User.motDePasse",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.Admin.User.Visiteur.User.Admin",
+        "Type": "Location.Models.Admin",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.Admin.User.Visiteur.User.Visiteur",
+        "Type": "Location.Models.Visitor",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.Admin.User.Visiteur.User.Owner.OwnerId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.Admin.User.Visiteur.User.Owner.UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.Admin.User.Visiteur.User.Owner.User",
+        "Type": "Location.Models.User",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.Admin.User.Visiteur.User.Owner.Maisons",
+        "Type": "System.Collections.Generic.ICollection\u00601[[Location.Models.Maison, Location, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.Admin.User.Visiteur.User.Client",
+        "Type": "Location.Models.Client",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.Admin.User.Owner.OwnerId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.Admin.User.Owner.UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.Admin.User.Owner.User",
+        "Type": "Location.Models.User",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.Admin.User.Owner.Maisons",
+        "Type": "System.Collections.Generic.ICollection\u00601[[Location.Models.Maison, Location, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.Admin.User.Client",
+        "Type": "Location.Models.Client",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.Visiteur.VisitorId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.Visiteur.UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.Visiteur.User.UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.Visiteur.User.nom",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.Visiteur.User.prenom",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.Visiteur.User.email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.Visiteur.User.role",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.Visiteur.User.motDePasse",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.Visiteur.User.Admin.UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.Visiteur.User.Admin.User.UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.Visiteur.User.Admin.User.nom",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.Visiteur.User.Admin.User.prenom",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.Visiteur.User.Admin.User.email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.Visiteur.User.Admin.User.role",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.Visiteur.User.Admin.User.motDePasse",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.Visiteur.User.Admin.User.Admin",
+        "Type": "Location.Models.Admin",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.Visiteur.User.Admin.User.Visiteur",
+        "Type": "Location.Models.Visitor",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.Visiteur.User.Admin.User.Owner.OwnerId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.Visiteur.User.Admin.User.Owner.UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.Visiteur.User.Admin.User.Owner.User",
+        "Type": "Location.Models.User",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.Visiteur.User.Admin.User.Owner.Maisons",
+        "Type": "System.Collections.Generic.ICollection\u00601[[Location.Models.Maison, Location, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.Visiteur.User.Admin.User.Client",
+        "Type": "Location.Models.Client",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.Visiteur.User.Visiteur",
+        "Type": "Location.Models.Visitor",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.Visiteur.User.Owner.OwnerId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.Visiteur.User.Owner.UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.Visiteur.User.Owner.User",
+        "Type": "Location.Models.User",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.Visiteur.User.Owner.Maisons",
+        "Type": "System.Collections.Generic.ICollection\u00601[[Location.Models.Maison, Location, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.Visiteur.User.Client",
+        "Type": "Location.Models.Client",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.Owner.OwnerId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.Owner.UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.Owner.User",
+        "Type": "Location.Models.User",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.Owner.Maisons",
+        "Type": "System.Collections.Generic.ICollection\u00601[[Location.Models.Maison, Location, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.User.Client",
+        "Type": "Location.Models.Client",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.Maisons",
+        "Type": "System.Collections.Generic.ICollection\u00601[[Location.Models.Maison, Location, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.Reviews",
+        "Type": "System.Collections.Generic.ICollection\u00601[[Location.Models.Review, Location, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.Payments",
+        "Type": "System.Collections.Generic.ICollection\u00601[[Location.Models.Payment, Location, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.User.Client.Payment",
+        "Type": "System.Object",
+        "IsRequired": false
+      },
+      {
+        "Name": "Owner.Maisons",
+        "Type": "System.Collections.Generic.ICollection\u00601[[Location.Models.Maison, Location, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Reviews",
+        "Type": "System.Collections.Generic.ICollection\u00601[[Location.Models.Review, Location, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Payments",
+        "Type": "System.Collections.Generic.ICollection\u00601[[Location.Models.Payment, Location, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "AdresseFilter",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ZoneFilter",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "MinPrix",
+        "Type": "System.Nullable\u00601[[System.Single, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "MaxPrix",
+        "Type": "System.Nullable\u00601[[System.Single, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "GenreFilter",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DisponibiliteFilter",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
